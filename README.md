@@ -1,8 +1,8 @@
-#base36
+# base36
 *base36* is a python class to be used for a base-36 number system. The characters
 used are 0-9 followed by A-Z.
 
-##operators
+## operators
 the base36 class is compatible with the following operators:
 - `init`: Initialization  
 - `str`: Convert to string for output
