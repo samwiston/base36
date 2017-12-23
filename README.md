@@ -2,8 +2,11 @@
 *base36* is a python class to be used for a base-36 number system. The characters
 used are 0-9 followed by A-Z.
 
+*base62* is identical to the base-36 number system except with more characters. The characters
+used are 0-9 followed by uppercase A-Z and then lowercase a-z
+
 ## operators
-the base36 class is compatible with the following operators:
+the base36 and base62 classes are compatible with the following operators:
 - `init`: Initialization  
 - `str`: Convert to string for output
 - `add`: Addition using (+)
