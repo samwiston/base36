@@ -68,7 +68,22 @@ def c36ToNum(num):
 def cnumTo36(num):
     digits = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     num36 = ""
+    frac = num % 1
+    num -= frac
+    degree = 4
+
+    if frac != 0:
+        num36 += "."
+
+    while(frac != 0) and (degree != 0):
+        frac *= 36
+        num36 += digits[int(frac/1)]
+        frac -= int(frac/1)
+        degree -= 1
+
     while (num != 0):
         num36 = digits[num%36] + num36
         num /= 36
     return num36
+
+print cnumTo36(.37)
